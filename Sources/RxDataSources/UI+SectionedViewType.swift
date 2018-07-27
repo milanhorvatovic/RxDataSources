@@ -98,6 +98,7 @@ extension UICollectionView : SectionedViewType {
             _performBatchUpdates(self, changes: changes, animationConfiguration: animationConfiguration)
         }, completion: { (completed: Bool) -> Void in
         })
+        self.collectionViewLayout.invalidateLayout()
     }
 }
 
